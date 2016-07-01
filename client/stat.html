@@ -1,0 +1,56 @@
+<template name="stat">
+
+    <table class="table table-condensed">
+        <thead>
+        <tr>
+            <td><h2>상태창</h2></td>
+        </tr>
+        </thead>
+        <tbody>
+        {{#with stats}}
+        <!--캐릭터명/직업-->
+        <tr class="success">
+            <td>{{name}}</td>
+            <td>{{job}}</td>
+        </tr>
+        <!--레벨/경험치-->
+        <tr class="active">
+            <td>LV : {{lv}}</td>
+            <td>exp : {{exp}}</td>
+        </tr>
+        <!--체력-->
+        <tr class="danger">
+            <td>HP</td>
+            <td>{{hp}}/{{maxhp}}</td>
+        </tr>
+        <!--마나-->
+        <tr class="info">
+            <td>MP</td>
+            <td>{{mp}}/{{maxmp}}</td>
+        </tr>
+        <!--스테미너-->
+        <tr class="warning">
+            <td>스테미너</td>
+            <td>{{st}}/{{maxst}}</td>
+        </tr>
+
+        <!--공격력-->
+        <tr>
+            <td>공격력</td>
+            <td>{{ap}}</td>
+        </tr>
+        <!--방어력-->
+        <tr>
+            <td>방어력</td>
+            <td>{{dp}}</td>
+        </tr>
+        <!--민첩성-->
+        <tr>
+            <td>민첩성</td>
+            <td>{{sp}}</td>
+        </tr>
+        {{/with}}
+        </tbody>
+    </table>
+
+</template>

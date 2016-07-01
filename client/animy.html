@@ -1,0 +1,45 @@
+<template name="animy">
+
+    <table id="animy2" class="table table-condensed" style="display:none">
+        <thead>
+        <tr>
+            <td><h2>몬스터</h2></td>
+        </tr>
+        </thead>
+        <tbody>
+        {{#with animy}}
+            <!--캐릭터명/직업-->
+            <tr class="success">
+                <td>LV{{lv}} {{name}}</td>
+                <td>{{job}}</td>
+            </tr>
+            <!--체력-->
+            <tr class="danger">
+                <td>HP</td>
+                <td>{{hp}}/{{maxhp}}</td>
+            </tr>
+            <!--마나-->
+            <tr class="info">
+                <td>MP</td>
+                <td>{{mp}}/{{maxmp}}</td>
+            </tr>
+            <!--공격력-->
+            <tr>
+                <td>공격력</td>
+                <td>{{ap}}</td>
+            </tr>
+            <!--방어력-->
+            <tr>
+                <td>방어력</td>
+                <td>{{dp}}</td>
+            </tr>
+            <!--민첩성-->
+            <tr>
+                <td>민첩성</td>
+                <td>{{sp}}</td>
+            </tr>
+        {{/with}}
+        </tbody>
+    </table>
+
+</template>
